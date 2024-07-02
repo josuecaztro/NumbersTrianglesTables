@@ -8,7 +8,8 @@ public class NumberUtilitiesTest {
     public void testGetRange1A() {
         // : Given
         String expected = "0123456789";
-        int stop = 11;
+        //Had to change from 11 to 10. -Kris
+        int stop = 10;
 
         // : When
         String actual = NumberUtilities.getRange(stop);
@@ -84,10 +85,12 @@ public class NumberUtilitiesTest {
     }
 
 
+//have to change 103 to 102 for this 3b one
+
     @Test
     public void testGetRange3B() {
         // : Given
-        String expected = "100101103104105106107108109";
+        String expected = "100101102103104105106107108109";
         int start = 100;
         int stop = 110;
 
@@ -169,9 +172,9 @@ public class NumberUtilitiesTest {
 
 
 
-
+    //had to change to Odd
     @Test
-    public void testGetEvenNumbers() {
+    public void testGetOddNumbers() {
         // : Given
         String expected = "5791113151719";
         int start = 5;
@@ -184,8 +187,9 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
+    //had to change to Even
     @Test
-    public void testGetOddNumbers() {
+    public void testGetEvenNumbers() {
         // : Given
         String expected = "681012141618";
         int start = 5;
